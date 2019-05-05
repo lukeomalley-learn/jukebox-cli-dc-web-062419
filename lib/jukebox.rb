@@ -21,6 +21,8 @@ end
 def list(songs)
   songs.each_with_index do |i, song|
     puts "#{i+1}. #{song}"
+    input = gets.chomp
+    
   end
 end
 
