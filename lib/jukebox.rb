@@ -17,3 +17,9 @@ def help
   puts'- play : lets you choose a song to play'
   puts'- exit : exits this program'
 end
+
+def list(songs)
+  songs.each_with_index do |i, song|
+    puts "#{i+1}. #{song}"
+  end
+end
