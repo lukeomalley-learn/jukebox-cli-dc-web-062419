@@ -31,5 +31,5 @@ def play(songs)
     if input == (i + 1) || song
       puts "Playing #{song}"
     else
-      puts
+      puts"Invalid input, please try again"
 end
