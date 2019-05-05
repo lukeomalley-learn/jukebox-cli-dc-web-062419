@@ -21,12 +21,13 @@ end
 def list(songs)
   songs.each_with_index do |i, song|
     puts "#{i+1}. #{song}"
-    input = gets.chomp
-    
   end
 end
 
 def play(songs)
   puts'Please enter a song name or number:'
-  
+  input = gets.chomp
+  songs.each_with_index do |i, song|
+    if input == (i + 1) || song
+      puts ''
 end
