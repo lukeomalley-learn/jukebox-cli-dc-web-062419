@@ -29,5 +29,5 @@ def play(songs)
   input = gets.chomp
   songs.each_with_index do |i, song|
     if input == (i + 1) || song
-      puts ''
+      puts "Playing #{song}"
 end
