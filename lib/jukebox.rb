@@ -45,10 +45,20 @@ def run
   help
   puts 'Please enter a command:'
   input = gets.chomp
-  if input == 'exit'
-    exit_jukebox
-  else
-    
+  if input == 'exit' || 'play' || 'help' || 'list'
+    case input
+    when 'play'
+      play(songs)
+    when 'help'
+      help
+    when 'list'
+      list(songs)
+    when 'exit'
+      exit_jukebox
+    else
+      puts 'Please enter a valid command. For a list of valid commands enter help'
+        
+      
   
   
   
