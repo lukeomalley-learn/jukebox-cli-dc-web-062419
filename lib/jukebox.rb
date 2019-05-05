@@ -42,7 +42,7 @@ def exit_jukebox
   exit
 end
 
-def run
+def run(songs)
   running = true
   help
   while running
@@ -64,7 +64,7 @@ def run
   end
 end
         
-run
+run(songs)
       
   
   
