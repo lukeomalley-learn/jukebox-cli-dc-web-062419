@@ -43,20 +43,24 @@ def exit_jukebox
 end
 
 def run
+  running = true
   help
-  puts 'Please enter a command:'
-  input = gets.chomp
-  case input
-  when 'play'
-    play(songs)
-  when 'help'
-    help
-  when 'list'
-    list(songs)
-  when 'exit'
-    exit_jukebox
-  else
-    puts 'Please enter a valid command. For a list of valid commands enter help'
+  while running
+    puts 'Please enter a command:'
+    input = gets.chomp
+    case input
+    when 'play'
+      play(songs)
+    when 'help'
+      help
+    when 'list'
+      list(songs)
+    when 'exit'
+      running = false
+      exit_jukebox
+    else
+      puts 'Please enter a valid command. For a list of valid commands enter help'
+    end
   end
 end
         
