@@ -57,6 +57,7 @@ def run
   else
     puts 'Please enter a valid command. For a list of valid commands enter help'
   end
+end
         
       
   
